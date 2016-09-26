@@ -8,9 +8,6 @@
 #include <ctime>
 using namespace std;
 
-//function prototypes
-void displayMenu();
-
 //global variables
 const int TIME[]={1130, 1300, 1630, 1930};
 const int DATE[]={3, 4, 10, 11};
@@ -26,6 +23,10 @@ const double MATINEE_DISCOUNT=0.30;
 const int ZIPCODES[]={48120,48124,48126,48128};
 const int ROWS=15;
 const int COLUMNS=30;
+
+//function prototypes
+void displayMenu();
+void load_seats(char [ROWS][COLUMNS]);
 
 int main()
 {
@@ -70,13 +71,3 @@ void displayMenu()
 	
 }
 
-getTickets()
-{
-	
-}
-
-calculateTicketPrice()
-{
-	
-	
-}
