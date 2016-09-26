@@ -54,10 +54,13 @@ int main()
 }
 
 //Make a function that will load some randome data into the array.
-void load_seats(char a[ROWS][COLUMNS]) {
+void load_seats(char a[ROWS][COLUMNS]) 
+{
 	srand(time(0));
-	for (size_t x = 0; x < ROWS; x++) {
-		for (size_t y = 0; y < COLUMNS; y++) {
+	for (size_t x = 0; x < ROWS; x++) 
+	{
+		for (size_t y = 0; y < COLUMNS; y++) 
+		{
 			//Use random value in array.
 			a[x][y] = (rand() % 2) ? 'X' : 'O';
 		}
