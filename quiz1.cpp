@@ -72,27 +72,3 @@ void displayMenu()
 	
 }
 
-//int ticketForSale()
-{
-	
-}
-
-//int ticketsSold()
-{
-	
-}
-
-//double costPerTicket()
-{
-	
-}
-
-//student()
-{
-	
-}
-
-//validation()
-{
-	
-}
