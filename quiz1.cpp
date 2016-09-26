@@ -77,7 +77,7 @@ getTickets()
 	
 }
 
-calculateTickets()
+calculateTickets() //To be completed by Chris Harris
 {
 	
 	
