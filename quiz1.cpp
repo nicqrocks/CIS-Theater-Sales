@@ -25,8 +25,13 @@ const int ROWS=15;
 const int COLUMNS=30;
 
 //function prototypes
-void displayMenu();
 void load_seats(char [ROWS][COLUMNS]);
+void displayMenu(int, int);
+void displaySeats(seats[ROWS][COLUMNS]);
+void getTickets(vector<int>, vector<int>);
+void calculateTicketPrice(vector<int>, vector<int>, int);
+double getDiscount();
+
 
 int main()
 {
@@ -37,19 +42,19 @@ int main()
 	vector<int> ticketSeats;
 	vector<int> ticketRows;
 	vector<int> ticketPrice;
-	
+
 	//function calls
-	load_seats(seats[ROWS][COLUMNS]); 
-	displayMenu(&date, &time); //display the menu for the user to display time and dates
+	load_seats(seats[ROWS][COLUMNS]);
+	displayMenu(date, time); //display the menu for the user to display time and dates
 	displaySeats(seats); //display the seating chart
 	getTickets(ticketSeats,ticketRows);
 	displaySeats(seats); //display the updated seating chart to refect the tickets sold
 	calculateTicketPrice(ticketPrice, ticketRows, time); //calculate the ticket price
 	discount = getDiscount(); //this is the discount ticket price for HFC students or Dearborn residents
-	
+
 	//output
 	cout<<"You have purchased: "<<
-	
+
 	return 0;
 }
 
@@ -68,17 +73,17 @@ void displayMenu()
 {
 	cout<<"Welcome to the online box office!"<<endl;
 	cout<<"Please select an option for the following show times: "<<endl;
-	
+
 }
 
 getTickets()
 {
-	
-	
+
+
 }
 
 calculateTickets()
 {
-	
-	
+
+
 }
