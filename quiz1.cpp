@@ -70,3 +70,13 @@ void displayMenu()
 	
 }
 
+getTickets()
+{
+	
+}
+
+calculateTicketPrice()
+{
+	
+	
+}
