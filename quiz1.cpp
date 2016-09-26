@@ -63,8 +63,6 @@ void load_seats(char a[ROWS][COLUMNS]) {
 	}
 }
 
-
-
 void displayMenu()
 {
 	cout<<"Welcome to the online box office!"<<endl;
