@@ -71,13 +71,13 @@ void displayMenu()
 	
 }
 
-getTickets()
+int getTickets()
 {
 	
 	
 }
 
-calculateTickets()
+double calculateTickets()
 {
 	
 	
