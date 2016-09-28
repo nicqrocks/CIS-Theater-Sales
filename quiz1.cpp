@@ -77,8 +77,17 @@ getTickets()
 	
 }
 
-calculateTickets() //To be completed by Chris Harris
+calculateTicketPrice() //To be completed by Chris Harris
 {
-	
+	cout << "Please enter a valid row number for your ticket: ";
+	cin >> ticketRows;
+	cout << "Please enter a valid date for your ticket: ";
+	cin >> date;
+	cout << "Please enter a valid time for your ticket: ";
+	cin >> time;
+	cout << "Please enter a valid HFCC student ID number or please enter a valid dearborn zipcode"
+	cin >> HFC_DISCOUNT, ZIPCODES
+		
+	if	(
 	
 }
