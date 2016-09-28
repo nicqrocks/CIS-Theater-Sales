@@ -26,8 +26,8 @@ const int COLUMNS=30;
 
 //function prototypes
 void load_seats(char [ROWS][COLUMNS]);
-void displayMenu(int, int);
-void displaySeats(seats[ROWS][COLUMNS]);
+void displayMenu(int &, int &);
+void displaySeats(char [ROWS][COLUMNS]);
 void getTickets(vector<int>, vector<int>);
 void calculateTicketPrice(vector<int>, vector<int>, int);
 double getDiscount();
@@ -44,7 +44,7 @@ int main()
 	vector<int> ticketPrice;
 
 	//function calls
-	load_seats(seats[ROWS][COLUMNS]);
+	load_seats(seats);
 	displayMenu(date, time); //display the menu for the user to display time and dates
 	displaySeats(seats); //display the seating chart
 	getTickets(ticketSeats,ticketRows);
@@ -53,7 +53,7 @@ int main()
 	discount = getDiscount(); //this is the discount ticket price for HFC students or Dearborn residents
 
 	//output
-	cout<<"You have purchased: "<<
+
 
 	return 0;
 }
@@ -69,21 +69,45 @@ void load_seats(char a[ROWS][COLUMNS]) {
 	}
 }
 
-void displayMenu()
+void displayMenu(int &s_day, int &s_time)
 {
-	cout<<"Welcome to the online box office!"<<endl;
-	cout<<"Please select an option for the following show times: "<<endl;
+	//Make a varaible to hold user input before assigning it to the input
+	//variable.
+	int tmp = 0;
+	int size = 0;
 
-}
+	//Display the info to the user.
+	cout << "Welcome to the online box office!" << endl;
 
-getTickets()
-{
+	//Ask the user what day to attend.
+	cout << "The following is a list of dates available for the show:" << endl;
+	//Figure out the size of the DATE array.
+	size = (sizeof(DATE) / sizeof(DATE[0]));
+	for (size_t i = 0; i < size; i++) {
+		cout << i << ". December " << DATE[i] << endl;
+	}
+
+	while (tmp <= 0 or size >= tmp) {
+		//Get the user's input.
+		cout << "Enter the option would you like: ";
+		cin >> tmp;
+	}
+	//The data is vaild, set date to the value.
+	s_day = tmp;
+	tmp = 0;
 
 
-}
+	//Ask about the show times.
+	cout << "The following is a list of showtimes available (in 24 hour time):" << endl;
+	size = (sizeof(TIME) / sizeof(TIME[0]));
+	for (size_t i = 0; i < size; i++) {
+		cout << TIME[i] << endl;
+	}
 
-calculateTickets()
-{
-
-
+	while (tmp <= 0 or size >= tmp) {
+		cout << "Enter the option would like: ";
+		cin >> tmp;
+	}
+	//The data is valid, set the time to the tmp varaible.
+	s_time = tmp;
 }
