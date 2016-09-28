@@ -87,27 +87,46 @@ calculateTicketPrice() //To be completed by Chris Harris
 	cin >> time;
 	cout << "Please enter a valid HFCC student ID number or please enter a valid dearborn zipcode and please enter 0 if you have neither: "
 	cin >> HFC_DISCOUNT, ZIPCODES
-		
+	{
 		if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1130, 1300; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += BLUE_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
+		}
+	{
 		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1130, 1300; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += GREEN_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
+		}
+	{
 		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1130, 1300; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += PINK_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
+		}
+	{
 		else if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1630, 1930; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += BLUE_PRICE * HFC_DISCOUNT;
+		}
+	{
 		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1630, 1930; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += GREEN_PRICE * HFC_DISCOUNT;
+		}
+	{
 		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1630, 1930; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += PINK_PRICE * HFC_DISCOUNT;
+		}
+	{
 		else if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1130, 1300; ZIPCODES == 0)
 			discount += BLUE_PRICE * MATINEE_DISCOUNT;
+		}
+	{
 		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1130, 1300; ZIPCODES == 0)
 			discount += GREEN_PRICE * MATINEE_DISCOUNT;
+		}
+	{
 		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1130, 1300; ZIPCODES == 0)
 			discount += PINK_PRICE * MATINEE_DISCOUNT;
+		}
+	{
 		else
 			cout << "Invalid entry. Please resubmit your data with the appropriate numbers.";
+		}
 }
 }
 }
