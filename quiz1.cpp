@@ -90,43 +90,64 @@ calculateTicketPrice() //To be completed by Chris Harris
 	{
 		if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1130, 1300; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += BLUE_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
+			TicketPrice += BLUE_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1130, 1300; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += GREEN_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
+			TicketPrice += GREEN_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1130, 1300; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += PINK_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
+			TicketPrice += PINK_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1630, 1930; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += BLUE_PRICE * HFC_DISCOUNT;
+			TicketPrice += BLUE_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1630, 1930; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += GREEN_PRICE * HFC_DISCOUNT;
+			TicketPrice += GREEN_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1630, 1930; ZIPCODES == 48120, 48124, 48126, 48128)
 			discount += PINK_PRICE * HFC_DISCOUNT;
+			TicketPrice += PINK_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1130, 1300; ZIPCODES == 0)
 			discount += BLUE_PRICE * MATINEE_DISCOUNT;
+			TicketPrice += BLUE_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1130, 1300; ZIPCODES == 0)
 			discount += GREEN_PRICE * MATINEE_DISCOUNT;
+			TicketPrice += GREEN_PRICE - discount;
 		}
 	{
 		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1130, 1300; ZIPCODES == 0)
 			discount += PINK_PRICE * MATINEE_DISCOUNT;
+			TicketPrice += PINK_PRICE - discount;
+		}
+	{
+		else if (ticketRows <= BLUE_ROW; ticket rows >= 0; time == 1630, 1930; ZIPCODES == 0)
+			TicketPrice += BLUE_PRICE;
+		}
+	{
+		else if (ticketRows <= GREEN_ROW; ticket rows >= 5; time == 1630, 1930; ZIPCODES == 0)
+			TicketPrice += GREEN_PRICE;
+		}
+	{
+		else if (ticketRows <= PINK_ROW; ticket rows >= 12; time == 1630, 1930; ZIPCODES == 0)
+			TicketPrice += PINK_PRICE;
 		}
 	{
 		else
 			cout << "Invalid entry. Please resubmit your data with the appropriate numbers.";
-		}
+		} 
 }
 }
 }
