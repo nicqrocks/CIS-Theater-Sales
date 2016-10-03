@@ -86,62 +86,68 @@ calculateTicketPrice() //To be completed by Chris Harris
 	cout << "Please enter a valid military time for your ticket: ";
 	cin >> time;
 	cout << "Please enter a valid HFCC student ID number or please enter a valid dearborn zipcode and please enter 0 if you have neither: "
-	cin >> HFC_DISCOUNT, ZIPCODES
+	cin >> HFC_DISCOUNT, ZIPCODES, x
 	{
-		if (ticketRows <= BLUE_ROW && ticket rows >= 0 && time == 1130, 1300 && ZIPCODES == 48120, 48124, 48126, 48128)
+		if (ticketRows <= BLUE_ROW && ticket rows >= 0 && time == 1130, 1300 && (ZIPCODES == 48120, 48124, 48126, 48128
+											 or 99999>x>999999))
 			discount += BLUE_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
 			TicketPrice += BLUE_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1130, 1300 && ZIPCODES == 48120, 48124, 48126, 48128)
+		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1130, 1300 && (ZIPCODES == 48120, 48124, 48126, 48128
+											 or 99999>x>999999))
 			discount += GREEN_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
 			TicketPrice += GREEN_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1130, 1300 && ZIPCODES == 48120, 48124, 48126, 48128)
+		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1130, 1300 && (ZIPCODES == 48120, 48124, 48126, 48128
+											 or 99999>x>999999))
 			discount += PINK_PRICE * (HFC_DISCOUNT + MATINEE_DISCOUNT);
 			TicketPrice += PINK_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= BLUE_ROW && ticket rows >= 5 && time == 1630, 1930 && ZIPCODES == 48120, 48124, 48126, 48128)
+		else if (ticketRows <= BLUE_ROW && ticket rows >= 5 && time == 1630, 1930 && (ZIPCODES == 48120, 48124, 48126, 48128
+											 or 99999>x>999999))
 			discount += BLUE_PRICE * HFC_DISCOUNT;
 			TicketPrice += BLUE_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1630, 1930 && ZIPCODES == 48120, 48124, 48126, 48128)
+		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1630, 1930 && (ZIPCODES == 48120, 48124, 48126, 48128
+											 or 99999>x>999999))
 			discount += GREEN_PRICE * HFC_DISCOUNT;
 			TicketPrice += GREEN_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1630, 1930 && ZIPCODES == 48120, 48124, 48126, 48128)
+		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1630, 1930 && (ZIPCODES == 48120, 48124, 48126, 48128
+											 or 99999>x>999999))
 			discount += PINK_PRICE * HFC_DISCOUNT;
 			TicketPrice += PINK_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= BLUE_ROW && ticket rows >= 0 && time == 1130, 1300 && ZIPCODES == 0)
+		else if (ticketRows <= BLUE_ROW && ticket rows >= 0 && time == 1130, 1300 && (ZIPCODES == 0 or (x<99999 or x>999999)))
 			discount += BLUE_PRICE * MATINEE_DISCOUNT;
 			TicketPrice += BLUE_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1130, 1300 && ZIPCODES == 0)
+		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1130, 1300 && (ZIPCODES == 0 or (x<99999 or x>999999)))
 			discount += GREEN_PRICE * MATINEE_DISCOUNT;
 			TicketPrice += GREEN_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1130, 1300 && ZIPCODES == 0)
+		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1130, 1300 && (ZIPCODES == 0 or (x<99999 or x>999999)))
 			discount += PINK_PRICE * MATINEE_DISCOUNT;
 			TicketPrice += PINK_PRICE - discount;
 		}
 	{
-		else if (ticketRows <= BLUE_ROW && ticket rows >= 0 && time == 1630, 1930 && ZIPCODES == 0)
+		else if (ticketRows <= BLUE_ROW && ticket rows >= 0 && time == 1630, 1930 && (ZIPCODES == 0 or (x<99999 or x>999999)))
 			TicketPrice += BLUE_PRICE;
 		}
 	{
-		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1630, 1930 && ZIPCODES == 0)
+		else if (ticketRows <= GREEN_ROW && ticket rows >= 5 && time == 1630, 1930 && (ZIPCODES == 0 or (x<99999 or x>999999)))
 			TicketPrice += GREEN_PRICE;
 		}
 	{
-		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1630, 1930 && ZIPCODES == 0)
+		else if (ticketRows <= PINK_ROW && ticket rows >= 12 && time == 1630, 1930 && (ZIPCODES == 0 or (x<99999 or x>999999)))
 			TicketPrice += PINK_PRICE;
 		}
 	{
