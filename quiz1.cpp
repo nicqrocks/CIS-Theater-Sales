@@ -148,6 +148,7 @@ calculateTicketPrice() //To be completed by Chris Harris
 		else
 			cout << "Invalid entry. Please resubmit your data with the appropriate numbers.";
 		} 
+	return 0;
 	}
 }
 }
